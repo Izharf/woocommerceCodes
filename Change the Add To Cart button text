@@ -1,0 +1,9 @@
+/**
+* Snippet Name: Change the Add To Cart button text on the WooCommerce product archive template.
+
+*/
+
+add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_custom_product_add_to_cart_text' );
+function woocommerce_custom_product_add_to_cart_text() {
+return __( 'Your Text Here', 'woocommerce' );
+}
