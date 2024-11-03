@@ -1,0 +1,9 @@
+/**
+* Snippet Name:     Change the WooCommerce sale badge.
+*/
+
+add_filter( 'woocommerce_sale_flash', 'ecommercehints_rename_sale_badge', 10, 2 );
+
+function ecommercehints_rename_sale_badge( $badge_html, $post ) {
+	return '<span class="onsale">Price Cut!</span>';
+}
