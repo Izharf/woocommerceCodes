@@ -1,0 +1,10 @@
+/**
+* Snippet Name:     Change the WooCommerce Place Order checkout button text.
+
+*/
+
+add_filter( 'woocommerce_order_button_text', 'ecommercehints_checkout_button_text' );
+
+function ecommercehints_checkout_button_text( $button_text ) {
+   return 'Get The Goods!'; // new text is here
+}
