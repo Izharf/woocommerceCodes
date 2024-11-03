@@ -1,0 +1,12 @@
+/**
+* Snippet Name:     Show custom text (field descriptions) under WooCommerce checkout fields.
+
+*/
+
+add_filter( 'woocommerce_billing_fields' , 'ecommercehints_custom_content_under_checkout_fields' );
+
+function ecommercehints_custom_content_under_checkout_fields( $fields ) {
+
+$fields['billing_first_name']['description'] = 'type your text here';
+return $fields;
+}
