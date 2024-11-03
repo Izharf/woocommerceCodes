@@ -1,0 +1,9 @@
+/**
+* Snippet Name:     Remove the Address Line 2 field from the WooCommerce checkout form.
+*/
+
+function ecommercehints_filter_billing_fields($fields){
+unset( $fields["billing_address_2"] );
+return $fields;
+}
+add_filter( 'woocommerce_billing_fields', 'ecommercehints_filter_billing_fields' );
